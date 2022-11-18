@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <h1>WELCOME to counter application</h1>
+    <hr>
+    <div>
+        <span id="number">0</span>
+    </div>
+    <div class="buttons-center">
+        <span class="btn btn-add">+</span>
+        <span class="btn btn-subtract">-</span>
+
+
+    </div>
+    <script>
+        addBtn = document.getElementsByClassName('btn-add')[0];
+        subtractBtn = document.getElementsByClassName('btn-subtract')[0];
+        number = document.getElementById('number');
+
+        addBtn.addEventListner('click', function(){
+            number.innerHTML = parseInt(number.innerHTML)+1;
+        });
+        subtractBtn.addEventListner('click', function(){
+            number.innerHTML = parseInt(number.innerHTML)-1;
+        });
+
+
+
+    </script>
+    
+    
+</body>
+</html>

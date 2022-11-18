@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gfg1{
+            font-size: 30px;
+            color: green;
+        }
+        #gfg2{
+            font-size: 30px;
+            color: green;
+        }
+        div{
+            margin-left: 30%;
+        }
+        button{
+            font-size: 20px;
+
+        }
+
+        </style>
+</head>
+<body>
+    <div>
+        <p class="gfg1">tuyizere donatien</p>
+        <button onclick="fun()">click</button>
+        <p id="gfg2"></p>
+        </div>
+        
+
+    <script>
+        function fun(){
+
+            const input = prompt('enter the number: ');
+            if(input >= 1 && input <= 10){
+                document.getElementById('gfg2').innerHTML = input + "" + "success";
+            }
+            else{
+                document.getElementById('gfg2').innerHTML = input + "" + "fail";
+
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1; num2; sum;
+        function getFirNum(){
+            num1 = parseInt(document.getElementById('first').value);
+            if(num1){
+                temp.document.getElementById('parOne');
+                temp.style.display = 'none';
+                temp.document.getElementById('parTwo');
+                temp.style.display = 'block';
+            }
+
+
+        }
+        function getSecNum(){
+            num2 = parseInt(document.getElementById('second'));
+            if(num1 && num2){
+                temp.document.getElementById('parOne');
+                temp.style.display = 'none';
+                temp.document.getElementById('parTwo');
+                temp.style.display = 'none';
+                sum = num1 + num2;
+                temp.document.getElementById('parThree');
+                temp.style.display = 'block';
+                document.getElementById('result').innerHTML = sum;
+
+
+
+
+            }
+        }
+
+
+
+    </script>
+</head>
+
+
+<p id="parOne">Enter the first number: <input id="first">
+<button onclick="getFirNum()">Enter</button></p>
+
+<p id="parTwo">Enter the second number: <input id="second">
+<button onclick="getSecNum()">ADD</button></p>
+<p id="parThree"; style="display:none;"; sum = span id="result"></span></p>
+
+    
+</body>
+</html>
